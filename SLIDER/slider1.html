@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="" alt="" height="700px" width="100%">
+</body>
+</html>
+<script>
+    let arr=["https://static.theprint.in/wp-content/uploads/2022/07/Untitled-design-10-1.jpg","https://t4.ftcdn.net/jpg/05/47/97/81/360_F_547978128_vqEEUYBr1vcAwfRAqReZXTYtyawpgLcC.jpg","https://i.pinimg.com/originals/1a/b0/89/1ab089aaf438547bc56b14d3e597807d.jpg"]
+
+    let currentIndex = 0
+    setInterval(()=>{
+       currentIndex = (currentIndex + 1) % arr.length
+       document.querySelector("img").src = arr[currentIndex]
+    },1000)
+</script>
